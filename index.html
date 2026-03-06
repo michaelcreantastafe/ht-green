@@ -1,0 +1,112 @@
+<!--https://validator.w3.org was used to make this html pretty much immaculate-->
+<!--W3C is like a liniting tool for HTML and CSS, like how pylint lints pytho code or pdb to debug python code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets character encoding to UTF-8 to support all common characters -->
+    <meta charset="UTF-8">
+    <!-- Ensures the site scales properly on all device sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HT Green - Energy Consultants</title>
+    <!-- Links external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- .page-wrapper: Wraps all visible content on the page for layout control -->
+    <div class="page-wrapper">
+
+        <!-- Section: Header and Navigation -->
+        <header>
+            <!-- <img>: Displays main site banner -->
+            <!-- .banner: Decorative top image for branding -->
+            <img src="images/htgreen-hero.jpg" alt="HT Green Banner" class="banner">
+
+            <!-- <nav>: Navigation section containing links -->
+            <nav>
+                <!-- .logo: Displays small company logo in navigation bar -->
+                <a href="index.html"><img src="images/logo32.png" alt="HT Green Logo" class="logo"></a>
+
+                <!-- <ul>: Unordered list for menu items -->
+                <ul>
+                    <!-- <li>: List item -->
+                    <!-- <a>: Link to anchor within the same page -->
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Section: Main Content Area -->
+        <main>
+
+            <!-- Section: Introduction: With all these sections i guess we are really sectioning it all off :) -->
+            <!-- .intro: First informational section introducing the service -->
+            <section class="intro">
+                <h2>Towards a zero electricity bill</h2>
+                <p>Sick of getting power bills? You’ve replaced all the old bulbs with LEDs, got a new fridge and super-efficient heat pump and you’re still being slugged a $120+ per quarter! We help you do it properly — make deep and radical changes with solar and geothermal systems that guarantee no (or even positive) power bill for now and into the future.</p>
+            </section>
+
+            <!-- Section: Solar Feature -->
+            <!-- .feature: Reusable block for each technology topic -->
+            <section class="feature">
+                <h3>Solar PV Solutions</h3>
+                <!-- .content: Contains both text and an image side by side -->
+                <div class="content">
+                    <!-- .text: Groups paragraphs logically inside feature content -->
+                    <div class="text">
+                        <p>Solar Photovoltaic systems have come of age. Installers can now guarantee power production for 20+ years at lower prices than ever. Cells are 50% more efficient, batteries more compact, cost-effective and better technology.</p>
+                        <p>We have battery options such as the Tesla Powerwall or other lithium-ion chemistry solutions to store your own energy even further.</p>
+                        <p>Call us to check which solution is best fit for your home.</p>
+                    </div>
+                    <!-- <img>: Supporting visual for the content -->
+                    <img src="images/pv250.jpg" alt="Solar House">
+                </div>
+            </section>
+
+            <!-- Section: Geothermal Feature -->
+            <section class="feature">
+                <h3>Geothermal</h3>
+                <div class="content">
+                    <div class="text">
+                        <p>Energy from the earth. It sounds simple because it is. The earth is warmer than the air, and in some cases hotter than your boiler. HT Green can engineer a solution to let you extract it to power the household — often unseen energy savings year-round.</p>
+                        <p>Geothermal is clean, effective, reliable and environmentally friendly, but has a low-carbon footprint (especially indoors via fan-assisted piping). These systems are extremely efficient, can automatically speed the heat-exchange process, and may qualify for direct applications such as hot water systems and floor/wall heating.</p>
+                        <p>Geothermal is used to release geothermal gases trapped deep within the Earth and turn turbines — this also avoids the use of imported wood fuels, coal, and methane-powered heating, helping mitigate global warming and fuel scarcity.</p>
+                    </div>
+                    <img src="images/geo250.jpg" alt="Geothermal Plant">
+                </div>
+            </section>
+
+            <!-- Section: Wind Turbine Feature -->
+            <section class="feature">
+                <h3>Wind Turbines</h3>
+                <div class="content">
+                    <div class="text">
+                        <p>If you have the space and the aspect, we have the know-how to engineer a solution that takes advantage of your geography and the wind flow. There's a place for domestic wind turbines in your renewable power strategy.</p>
+                        <p>Need to self-power? HT Green can show you more about how a wind turbine works and what to expect from your land before a wind turbine is installed.</p>
+                        <p>Contact us to go over the top of turbines or read below, buy from us, or contact one of our trained experts for an on-site fitting advice.</p>
+                    </div>
+                    <img src="images/turbine250.jpg" alt="Wind Turbines">
+                </div>
+            </section>
+
+            <!-- Section: About Us -->
+            <!-- .about: Company history and profile section -->
+            <section class="about" id="about">
+                <h3>About Us</h3>
+                <p>HT Green was established in 1997. We specialise in green technologies such as solar, wind turbines, geothermal and battery storage-based hybrid systems.</p>
+                <p>Company Directors Robert and Janet Willis built HT Green from the ground up with a small business grant and big dreams to power homes and businesses with energy derived from natural sources.</p>
+                <!-- .back-to-top: Anchor link to return to top of page -->
+                <a href="#top" class="back-to-top">Back to top</a>
+            </section>
+        </main>
+
+        <!-- Section: Footer -->
+        <footer>
+            <p>Copyright &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

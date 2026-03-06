@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HT Green - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <img src="images/htgreen-hero.jpg" alt="HT Green Banner" class="banner">
+            <nav>
+                <a href="index.html"><img src="images/logo32.png" alt="HT Green Logo" class="logo"></a>
+                <!-- added a new banner link: Home so that the visitor can click back to home more easily, the logo itself might not be obvious -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- gutted the page and then added a contact details table. This has their name, role, phone number and email -->
+             <!-- The entries are for two co-founders - Robert Willis, Janet WIllis (married) and Office manager Ella Tang -->
+            <section class="contact-info">
+                <h3>Contact Details</h3>
+                <table border="1" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Robert Willis</td>
+                            <td>Co-Director</td>
+                            <td>0412 345 678</td>
+                            <td>robert@htgreen.com.au</td>
+                        </tr>
+                        <tr>
+                            <td>Janet Willis</td>
+                            <td>Co-Director</td>
+                            <td>0412 987 654</td>
+                            <td>janet@htgreen.com.au</td>
+                        </tr>
+                        <tr>
+                            <td>Ella Tang</td>
+                            <td>Office Manager</td>
+                            <td>0411 222 333</td>
+                            <td>ella@htgreen.com.au</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="contact-form">
+                <h3>Contact Us</h3>
+                <!-- I used the course suggested form to email gateway. I am fine with my student email being used. -->
+                <form action="https://formsubmit.co/michael.crean.01@student.tafe.tas.edu.au" method="POST">
+                    <!-- Please feel free to email me the form submission -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject"><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea><br><br>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 HT Green</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+/* https://validator.w3.org was used to make this html pretty much immaculate, what? i did not just reuse the html mention of validator. */
+
+/* Reset some browser defaults — because browsers like to freestyle */
+/* Resets spacing and box model inconsistencies across different browsers */
+/* measuring the screen to work out the dimensions was the hardest part */
+/* The easier part was taking screen shots of the tutorial videos so i could copy the values */
+
+* {
+    margin: 0;                  /* Removes default margin on all elements */
+    padding: 0;                 /* Removes default padding on all elements */
+    box-sizing: border-box;     /* Ensures padding and border are included within total width/height */
+}
+
+/* all colours were aquired with the extension ColorPicker EyeDropper, as i have stupid Opera */
+/* Set base font, background image, and sensible body styling */
+body {
+    font-family: Arial, sans-serif;               /* Sets a clean, legible sans-serif font */
+    background: url('images/bg800bulbs.jpg') 
+                no-repeat center center fixed;    /* Applies full-screen background image, centered and fixed */
+    background-size: cover;                       /* Scales background image to fully cover screen */
+    color: #333;                                  /* Sets base text color to dark grey */
+    line-height: 1.6;                             /* Improves text readability with generous line spacing */
+}
+
+/* Wrapper to keep everything neat and centered like a well-managed whiteboard */
+.page-wrapper {
+    max-width: 960px;                              /* Limits page width for readability */
+    margin: 0 auto;                                /* Horizontally centers the wrapper */
+    background-color: #fff;                        /* Sets white background */
+    padding: 20px;                                 /* Adds internal spacing around content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);        /* Applies soft shadow for depth */
+}
+
+/* Header area for logo or banner — where first impressions happen */
+header {
+    position: relative;                            /* Allows positioning of inner elements relative to header */
+    text-align: center;                            /* Centers content inside header */
+    margin-bottom: 20px;                           /* Adds space below header */
+}
+
+/* Wavy banner because rectangles are for resumes */
+.banner {
+    width: 100%;                                   /* Banner stretches full width of container */
+    border-radius: 0 0 50% 50% / 10% 10% 10% 10%;   /* Creates a custom rounded bottom shape */
+}
+
+/* Main nav bar — practical, neutral, no dropdown drama */
+nav {
+    background-color: #f2f2f2;                     /* Light grey background for contrast */
+    display: flex;                                 /* Enables horizontal flex layout */
+    justify-content: space-between;               /* Pushes items to edges of nav bar */
+    align-items: center;                           /* Vertically aligns nav content */
+    padding: 10px 20px;                            /* Adds spacing inside nav */
+    margin-top: -5px;                              /* Pulls nav upward slightly to tuck under banner */
+}
+
+/* Tiny logo that doesn’t scream for attention */
+nav .logo {
+    width: 40px;                                   /* Sets fixed logo width */
+    height: auto;                                  /* Maintains image aspect ratio */
+}
+
+/* Little logo with big energy and knows how to make an entrance on hover */
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* When you hover, it seems to be more alive. It even grows a bit. */
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* List styles for the nav — keeping things horizontal like a timeline */
+nav ul {
+    list-style: none;                              /* Removes default bullet points */
+    display: flex;                                 /* Arranges list items horizontally */
+    gap: 20px;                                     /* Adds spacing between menu items */
+}
+
+/* Anchor styling in nav — bold, clear, and no underlines unless hovered */
+nav ul li a {
+    text-decoration: none;                         /* Removes underline by default */
+    color: #333;                                   /* Sets link color to dark grey */
+    font-weight: bold;                             /* Makes nav links stand out */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;                    /* Underlines link on hover for clarity */
+}
+
+/* Intro section — short and sweet */
+.intro {
+    margin-bottom: 30px;                           /* Adds spacing below intro text */
+}
+
+/* Feature block — a reusable content layout for highlights */
+.feature {
+    margin-bottom: 40px;                           /* Adds spacing below each feature block */
+    border-top: 1px solid #ddd;                    /* Adds a light dividing line at the top */
+    padding-top: 20px;                             /* Separates content from the border visually */
+}
+
+/* Feature heading — a bit of brand orange never hurt anyone */
+.feature h3 {
+    color: #b35e00;                                /* Applies brand color to headings */
+    margin-bottom: 10px;                           /* Adds spacing below headings */
+}
+
+/* Flex content inside a feature — image on one side, text on the other */
+.feature .content {
+    display: flex;                                 /* Lays out image and text side by side */
+    justify-content: space-between;               /* Pushes image and text apart */
+    align-items: flex-start;                       /* Aligns items to the top */
+    gap: 24px;                                     /* Adds space between image and text */
+}
+
+/* Feature image — styled and framed like an exhibit */
+.feature .content img {
+    width: 250px;                                  /* Fixed image width */
+    height: auto;                                  /* Keeps image proportion correct */
+    background-color: #b35e00;                     /* Adds background frame color */
+    padding: 5px;                                  /* Adds spacing inside the image border */
+    border: 1px solid #ccc;                        /* Light grey image border */
+}
+
+/* About section — just another content block, no identity crisis here */
+.about {
+    margin-bottom: 40px;                           /* Adds spacing below the about section */
+}
+
+/* Back to top button — because scrolling is cardio */
+.back-to-top {
+    display: inline-block;                         /* Allows padding and layout like a button */
+    margin-top: 20px;                              /* Adds spacing above the button */
+    padding: 8px 16px;                             /* Button padding for click area */
+    background-color: #ccc;                        /* Neutral grey background */
+    color: #000;                                   /* Sets text to black */
+    text-decoration: none;                         /* Removes link underline */
+    border-radius: 5px;                            /* Rounds the button corners */
+}
+
+.back-to-top:hover {
+    background-color: #999;                        /* Darkens button on hover for feedback */
+}
+
+/* Testimonials container — spacing before applause */
+.testimonials {
+    margin-bottom: 40px;                           /* Adds spacing below testimonial block */
+}
+
+/* Single testimonial block — like a quote tweet with better design */
+.testimonial {
+    background-color: #eefafa;                     /* Light blue-green background for calm tone */
+    padding: 15px;                                 /* Internal padding for spacing */
+    margin-bottom: 20px;                           /* Spacing between testimonials */
+    border-left: 4px solid #b35e00;                /* Adds a vertical brand-colored accent */
+    display: flex;                                 /* Lays out image and text horizontally */
+    align-items: center;                           /* Aligns content vertically */
+    gap: 15px;                                     /* Spacing between image and quote */
+}
+
+/* Testimonial image — consistent size, friendly face */
+.testimonial img {
+    width: 100px;                                  /* Fixed image width */
+    height: 100px;                                 /* Fixed image height */
+    object-fit: cover;                             /* Crops image to fit neatly without distortion */
+    border-radius: 5px;                            /* Rounds image corners slightly */
+}
+
+/* Quote styling — let the words do the talking */
+.testimonial blockquote {
+    font-style: italic;                            /* Italic font for quotation style */
+    margin: 0;                                     /* Removes default margins */
+}
+
+/* Attribution — who said the nice things? */
+.testimonial footer {
+    font-weight: bold;                             /* Emphasizes speaker name */
+    margin-top: 5px;                               /* Adds spacing above attribution */
+}
+
+/* Main footer — because every great page needs a great goodbye */
+footer {
+    background-color: #b35e00;                     /* Brand color background */
+    text-align: center;                            /* Centers text horizontally */
+    padding: 15px;                                 /* Adds internal spacing */
+    color: #fff;                                   /* White text for contrast */
+    margin-top: 40px;                              /* Adds space above the footer */
+}
+
+/* Contact Info Table — organized, clean, and full-width like a well-set dining table */
+.contact-info table {
+    width: 100%;                                  /* Table fills the full width of the parent container */
+    border-collapse: collapse;                    /* Removes spacing between table cells (merges borders) */
+    margin-bottom: 30px;                          /* Adds spacing below the table to separate it from other content */ 
+}
+
+/* Header and cell styles — both need the same comfy padding and tidy borders */
+.contact-info th,
+.contact-info td {
+    border: 1px solid #ccc;                    /* Adds a light grey border around each cell */
+    padding: 10px;                               /* Adds space inside each cell for readability */
+    text-align: left;                            /* Aligns text to the left inside cells */
+}
+
+/* Table headers — gets a soft background to stand out just enough */
+.contact-info th {
+    background-color: #f2f2f2;                /* Gives header cells a light grey background for contrast */
+}
+
+/* The form container — wrapped like a neat little present */
+.contact-form {
+    padding: 20px;                              /* Adds inner spacing inside the form box */
+    background-color: #f9f9f9;                /* Light background color for visual grouping */            
+    border: 1px solid #ccc;                   /* Light grey border around the form block */
+}
+
+/* Label styling — bold so you know where to look */
+.contact-form label {
+    font-weight: bold;                          /* Makes labels bold to distinguish them from input fields */
+}
+
+/* Inputs and textarea — made to stretch and breathe */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;                                /* Makes input fields span full width of container */
+    padding: 8px;                               /* Adds internal space inside inputs for better usability */
+    margin: 8px 0 16px 0;                       /* Adds vertical spacing above and below each input */
+    border: 1px solid #ccc;                   /* Light grey border for input fields */
+    border-radius: 4px;                         /* Rounds the corners of input boxes slightly */
+}
+
+/* The "Send Message" button — like a friendly doorman */
+.contact-form input[type="submit"] {
+    padding: 10px 20px;                         /* Adds yet more padding around the button text, maybe invent pillow type */
+    background-color: #b35e00;                /* Orange background color for primary action */
+    color: white;                             /* White text on the button */
+    border: none;                               /* Removes default browser border */
+    border-radius: 4px;                         /* Slightly rounded corners for a modern look */
+    cursor: pointer;                            /* Changes cursor to a hand icon when hovering */
+}
+
+/* Hover effect — a little color shift to show it's alive */
+.contact-form input[type="submit"]:hover {
+    background-color: #8c4800;               /* Darker orange background to indicate hover state */
+}
+
+
+/* Media query — aka 'how to not break your site on a phone' */
+/* I think this is really cool, it allows your app to be seen on all platforms pretty much. */
+@media (max-width: 768px) {
+  .feature .content {
+    flex-direction: column;                        /* Stacks items vertically on small screens */
+    align-items: center;                           /* Centers them horizontally */
+  }
+
+  .feature .content img {
+    width: 100%;                                   /* Makes image take full width of container */
+    max-width: 300px;                              /* Prevents it from becoming too large */
+  }
+}
